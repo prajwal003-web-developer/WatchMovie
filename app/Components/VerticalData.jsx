@@ -17,7 +17,7 @@ const VerticalData = ({ title, items, data }) => {
     }
 
     return (
-        <div className="p-4 md:p-7">
+        <div className="p-2 md:p-7">
             {/* Title + Buttons */}
             <div className="flex items-center justify-between mb-2">
                 <h2 className="text-white text-xl font-bold">{title}</h2>
@@ -40,7 +40,7 @@ const VerticalData = ({ title, items, data }) => {
             {/* Scrollable cards row */}
             <div
                 ref={scrollRef}
-                className='overflow-y-auto max-h-[80vh] flex flex-row gap-4 p-4 noScrollBar'
+                className='overflow-y-auto max-h-[90vh] flex flex-row gap-4 p-1 md:p-4 noScrollBar'
             >
                 {items?.map((movie) => (
                     <NetflixCard
