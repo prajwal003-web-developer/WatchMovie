@@ -1,10 +1,12 @@
+import HeroSection from '@/app/Components/HeroSection'
 import React from 'react'
-import HeroSection from './Components/HeroSection'
+import Body from './components/Body'
 
 const page = () => {
   return (
     <div>
       <HeroSection data={'movie'}/>
+      <Body/>
     </div>
   )
 }
