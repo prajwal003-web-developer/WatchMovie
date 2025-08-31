@@ -37,16 +37,16 @@ const NetflixCard = ({ id, name, image, description, data }) => {
               if (data === 'movie') playVideo(id);
               else playTv(id, 1, 1);
             }}
-            className="flex items-center gap-1 bg-white text-black px-2 md:px-3 py-1 rounded font-semibold hover:bg-gray-200 transition"
+            className="flex items-center gap-1 bg-white text-black px-2 md:px-3 justify-center py-1 rounded font-semibold hover:bg-gray-200 transition"
           >
-            <FaPlay /> Play
+            <FaPlay /> <span className='text-xs md:text-sm'>Play</span>
           </button>
 
           <button
             onClick={() => setOpen(id, data)}
-            className="flex items-center gap-1 bg-gray-700 text-white px-2 md:px-3 py-1 rounded font-semibold hover:bg-gray-600 transition"
+            className="flex items-center justify-center gap-1 bg-gray-700 text-white px-2 md:px-3 py-1 rounded font-semibold hover:bg-gray-600 transition"
           >
-            <FaInfoCircle /> Details
+            <FaInfoCircle /> <span className='hidden md:block'> Details</span>
           </button>
         </div>
       </div>
